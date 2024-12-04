@@ -35,70 +35,77 @@
             <div class="bg-white rounded-lg shadow-md p-6 mb-8">
                 <h2 class="text-2xl font-bold text-gray-800 mb-4">Average Laptop Prices by Brand</h2>
                 <img src="average_prices_brand.png" alt="Average Laptop Prices by Brand" class="w-full rounded-lg mb-4">
-                <p class="text-gray-600">
-                    This visualization shows average laptop prices for various brands. Razer, Huawei, and Apple have the highest average prices, indicating their premium positioning. 
-                    mid-range brands like ASUS, Dell, and HP offer a balance of price and performance. Budget brands, such as RDP and Micromax, have the lowest average prices, 
-                    targeting cost-conscious buyers. This visualization highlights the pricing hierarchy and market segmentation among laptop brands.
+                <p>
+                    This visualization shows the average prices of laptops for different brands. 
+                    The horizontal bar chart format makes it easy to compare price differences between brands.
+                    We can identify premium brands and budget-friendly options, helping consumers understand
+                    brand positioning in the market.
                 </p>
             </div>
-
+            
             <div class="bg-white rounded-lg shadow-md p-6 mb-8">
                 <h2 class="text-2xl font-bold text-gray-800 mb-4">Distribution of Laptop Prices</h2>
                 <img src="price_distribution.png" alt="Distribution of Laptop Prices" class="w-full rounded-lg mb-4">
-                <p class="text-gray-600">
-                    This visualization shows the distribution of laptop prices in the dataset. 
-                    Most laptops are priced below 100,000(INR), indicating a focus on affordability. 
-                    The frequency of laptops decreases as prices increase beyond 100,000(INR). 
-                    The distribution is positively skewed, with a few high-priced laptops. 
-                    This suggests that the market primarily targets budget and mid-range consumers.
+                <p>
+                    This histogram shows how laptop prices are distributed in our dataset. Most laptops are 
+                    priced below 100,000(INR), with fewer options in the higher price ranges. This right-skewed 
+                    distribution indicates that while most laptops target the mid-range market, there are some 
+                    premium options available at higher price points.
                 </p>
             </div>
-
+            
             <div class="bg-white rounded-lg shadow-md p-6 mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Interactive Price vs Battery Life Analysis</h2>
-                <iframe src="price_battery_chart.html" width="100%" height="600" frameborder="0" class="mb-4"></iframe>
-                <p class="text-gray-600">
-                    This visualization shows the relationship between laptop price and battery life. 
-                    Each dot represents a laptop, with its color indicating the brand. 
-                    By hovering over a dot, you can see detailed information like price, battery life, 
-                    and specifications. The chart helps identify patterns, such as higher-priced laptops often having longer battery life, 
-                    though there are exceptions. It also highlights which brands dominate certain price ranges, 
-                    making it easier to compare options and find laptops that offer the best value for their price.              
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">RAM and Price Analysis</h2>
+                <img src="ram_price_box.png" alt="RAM vs Price Distribution" class="w-full rounded-lg mb-4">
+                <p class="mb-4">
+                    The boxplot displays how prices vary across different RAM sizes. For each RAM configuration,
+                    you can see the median price, price range, and any outliers, providing a clear picture of
+                    price variations within each RAM category.
+                </p>
+                <img src="ram_price_scatter.png" alt="RAM vs Price Trend" class="w-full rounded-lg mb-4">
+                <p>
+                    This scatter plot with a regression line demonstrates the relationship between RAM size and price.
+                    The trend line shows a positive correlation - as RAM increases, the average price tends to increase
+                    as well. Individual points show the actual price of each laptop.
                 </p>
             </div>
-
-            <div class="bg-white rounded-lg shadow-md p-6 mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">RAM vs Price Analysis (D3)</h2>
-                <div id="d3-scatter-plot" class="w-full h-[600px] mb-4"></div>
-                <p class="text-gray-600">
-                    This visualization shows the relationship between laptop price and RAM size. 
-                    Each dot represents a laptop, with its color indicating the brand. 
-                    By hovering over a dot, you can see detailed information like price, 
-                    RAM, and processor type. Laptops with higher RAM generally have higher prices, 
-                    but some brands offer affordable options with higher RAM. 
-                    The chart also highlights premium models with significantly higher prices, 
-                    helping to identify both budget-friendly and high-end options.
-                </p>
-            </div>
-
+            
             <div class="bg-white rounded-lg shadow-md p-6">
                 <h2 class="text-2xl font-bold text-gray-800 mb-4">Feature Correlation with Price</h2>
-                <img src="Feautre_corr_price.png" alt="Feature Correlation" class="w-full rounded-lg mb-4">
-                <p class="text-gray-600">
-                    This visualization shows how different laptop features are correlated with price. 
-                    RAM has the strongest positive correlation, meaning laptops with more RAM are generally more expensive. 
-                    Features like adapter power and display quality also significantly impact the price. 
-                    SSD size and processor type moderately affect pricing, while laptops with HDDs tend to be less expensive. 
-                    Overall, the chart highlights that hardware specifications are key factors in determining laptop prices.
+                <img src="Feature_corr_price.png" alt="Feature Correlation" class="w-full rounded-lg mb-4">
+                <p>
+                    This horizontal bar chart shows how strongly different laptop features correlate with price.
+                    Each bar represents the correlation coefficient between a feature and price, helping identify
+                    which specifications have the strongest influence on laptop pricing. Longer bars indicate
+                    stronger correlations, while the direction (positive or negative) shows whether the feature
+                    tends to increase or decrease the price.
                 </p>
             </div>
-
+            
             <div class="bg-white rounded-lg shadow-md p-6 mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Laptop Price vs RAM Bubble Plot</h2>
-                <iframe src="bubbleplot_laptop.html" width="100%" height="600" frameborder="0" class="mb-4"></iframe>
-                <p class="text-gray-600">
-                    This interactive bubble plot shows the relationship between laptop price and RAM size. 
-                    The size of the bubble represents the adapter, and hovering over a bubble displays the laptop's name specifications.
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Interactive Price vs Battery Life Analysis</h2>
+                <iframe src="interactive_battery_price.html" width="100%" height="600" frameborder="0"></iframe>
+                <p class="mt-4">
+                    This interactive visualization shows the relationship between laptop price and battery life.
+                    You can:
+                    - Select specific brands from the dropdown menu
+                    - Click and drag to select multiple points
+                    - Hover over points for detailed information
+                    - Use the brand selector to focus on specific manufacturers
+                    Additional interactive features could be added to enhance analysis capabilities.
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Brand Price Distribution</h2>
+                <iframe src="brand_distribution.html" width="100%" height="600" frameborder="0"></iframe>
+                <p class="mt-4">
+                    This visualization shows price distribution across different brands.
+                    You can:
+                    - Toggle between histogram and box plot views
+                    - Select specific ranges of prices
+                    - Hover for detailed information
+                    More interactive features could be added to enhance the analysis.
                 </p>
             </div>
             
